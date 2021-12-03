@@ -9,8 +9,12 @@
  */
 function notify(messages) {
     // CODE HERE
-
-    return [counter, color];
+    let counter = messages.length;
+    if (counter > 5){
+        return [counter, 'red']
+    } 
+    else {
+        return [counter, 'green'];
+    }
 }
-
 export { notify };

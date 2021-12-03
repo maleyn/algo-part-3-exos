@@ -5,6 +5,11 @@
  */
 function average(scores) {
     // CODE HERE
+    let somme = 0;
+    for (let i = 0; i < scores.length; i++) {
+        somme += scores[i];
+    }
+    return scores = somme / scores.length;
 }
 
 export { average };
